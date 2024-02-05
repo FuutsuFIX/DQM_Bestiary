@@ -1,0 +1,40 @@
+/* MonsterList.css */
+.monster-list-container {
+  position: relative; /* Imposta il contenitore come riferimento per il positioning assoluto dei figli */
+  width: 100%;
+  max-width: 600px; /* Regola questa larghezza come preferisci */
+  margin: auto;
+  padding: 20px;
+}
+
+.monster-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1000;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 0px solid; /* default senza bordo */
+}
+
+.monster-list.has-search-term {
+  border: 2px solid #ccc; /* bordo quando c'è un termine di ricerca */
+}
+
+.monster-list-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer; /* Opzionale, se ogni riga è cliccabile */
+}
+.monster-list-item:hover {
+  background-color: #e6e6e6;
+}
+
+.monster-image {
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+  object-fit: contain;
+}
