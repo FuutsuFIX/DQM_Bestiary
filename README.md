@@ -6,7 +6,7 @@ Il progetto nasce sia come interesse personale verso il brand, ma anche come pro
 DQM_Bestiary è stata sviluppata utilizzando le seguenti tecnologie principali:
 
 ### Vite.js
-Vite.js è stato scelto come bundler per la web app. Le sue caratteristiche di build veloce e reattiva hanno permesso uno sviluppo agile e un'esperienza di sviluppo efficiente. Vite.js ha semplificato il processo di sviluppo grazie alla sua configurazione minimale e al supporto integrato per molte funzionalità di sviluppo moderne, tra cui Hot Module Replacement (HMR) e TypeScript.
+Vite.js è stato scelto come bundler per la web app. Le sue caratteristiche di build veloce e reattiva hanno permesso uno sviluppo agile e un'esperienza di sviluppo efficiente. Vite.js ha semplificato il processo di sviluppo grazie alla sua configurazione minimale.
 
 ### React
 React è stato utilizzato come framework di frontend per la realizzazione dell'interfaccia utente di DQM_Bestiary. Le sue prestazioni ottimizzate e la sua struttura modulare hanno reso più agevole la gestione dei componenti dell'applicazione. Inoltre, il modello di programmazione dichiarativo di React ha semplificato la gestione dello stato dell'applicazione, garantendo una maggiore manutenibilità del codice.
@@ -20,11 +20,11 @@ L'API [DQMonstersDB](https://github.com/cmsato09/DQMonstersDB-API) fornisce un p
 ## Vantaggi nel Progetto
 L'uso di Vite.js, React e Netlify ha portato diversi vantaggi significativi nel progetto DQM_Bestiary:
 
-1. **Velocità di Sviluppo**: Vite.js ha consentito un'esperienza di sviluppo rapida grazie alla sua build veloce e reattiva, consentendo agli sviluppatori di concentrarsi sulle funzionalità dell'applicazione anziché sulla configurazione del bundler.
+1. **Velocità di Sviluppo**: Vite.js ha consentito un'esperienza di sviluppo rapida grazie alla sua build veloce e reattiva, consentendomi di concentrarsi sulle funzionalità dell'applicazione anziché sulla configurazione del bundler.
 
 2. **Interfaccia Utente Reattiva**: React ha semplificato la gestione dell'interfaccia utente, consentendo la creazione di componenti modulari e riutilizzabili. Ciò ha reso più agevole la creazione di una UI dinamica e intuitiva per gli utenti.
 
-3. **Deployment Semplificato**: Netlify ha reso il processo di deployment dell'applicazione rapido e privo di complicazioni grazie alle sue funzionalità di deployment automatico e integrazione continua. Questo ha permesso agli sviluppatori di concentrarsi sullo sviluppo dell'applicazione piuttosto che sulla gestione dell'infrastruttura di hosting.
+3. **Deployment Semplificato**: Netlify ha reso il processo di deployment dell'applicazione rapido e privo di complicazioni grazie alle sue funzionalità di deployment automatico e integrazione continua. Questo mi ha permesso di concentrarmi sullo sviluppo dell'applicazione piuttosto che sulla gestione dell'infrastruttura di hosting.
 
 4. **Prestazioni Ottimizzate**: L'utilizzo di Vite.js e React ha contribuito a garantire prestazioni ottimizzate dell'applicazione, garantendo una navigazione fluida e responsiva per gli utenti finali.
 
