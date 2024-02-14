@@ -30,6 +30,7 @@ export default function MonsterFusionTable({ fusionData }) {
                         fusion.pedigree.id,
                         fusion.pedigree.new_name
                       )}
+                      onError={(event) => monsterDefaultImage(event)}
                       alt={fusion.pedigree.new_name}
                       className="mr-2"
                       style={{
