@@ -54,12 +54,7 @@ export default function MonsterList() {
             >
               <div key={monster.id} className={styles["monster-list-item"]}>
                 <img
-                  src={`${
-                    window.location.origin
-                  }/src/assets/images/monsters/${monster.new_name.replace(
-                    / /g,
-                    "_"
-                  )}.png`}
+                  src={getMonsterImage(monster.id, monster.new_name)}
                   alt={monster.new_name}
                   className={styles["monster-image"]}
                 />
