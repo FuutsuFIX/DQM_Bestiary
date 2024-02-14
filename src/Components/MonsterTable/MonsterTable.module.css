@@ -1,0 +1,14 @@
+.table td {
+  vertical-align: middle;
+}
+
+.monsterImage img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.action {
+  padding: 10px 6px;
+  text-decoration: none;
+}

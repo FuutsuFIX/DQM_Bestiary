@@ -1,4 +1,4 @@
-footer {
+.footer {
   background: #242424;
   color: white;
   padding: 20px 0;
@@ -23,12 +23,30 @@ footer {
   align-items: stretch;
 }
 
-a {
+.footerNav {
+  border-left: 1px solid #393939;
+  padding-left: 20px;
+}
+.footerNav a,
+#course a {
   text-decoration: none;
-  color: #dd092f;
+  margin: 8px 0;
+  font-weight: bold;
+  font-size: larger;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  color: #edac52 !important;
+  transition: all 0.2s;
+  -webkit-text-stroke: 0.8px black;
+  display: inline-block;
+}
+.footerNav a:hover {
+  transform: scale(1.2);
+}
+#course a:hover {
+  transform: scale(1.1);
 }
 
-a:hover {
-  text-decoration: none;
-  color: #f70931;
+.footer .active {
+  border-bottom: 1px solid blue !important;
 }

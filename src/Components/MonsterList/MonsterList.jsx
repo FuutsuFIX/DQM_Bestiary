@@ -1,24 +1,15 @@
-// src/components/MonsterList.js
 import React, { useState, useEffect } from "react";
-import "./MonsterList.css"; // Assicurati di avere questo file CSS
+import { Input } from "reactstrap";
+import { Link } from "react-router-dom";
+import styles from "./MonsterList.module.css";
 
-function SearchBar({ onSearch }) {
-  return (
-    <input
-      type="text"
-      placeholder="Cerca per nome del mostro..."
-      onChange={(e) => onSearch(e.target.value)}
-    />
-  );
-}
-
-function MonsterList() {
+export default function MonsterList() {
   const [monsters, setMonsters] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     fetch(
-      "https://cors-anywhere.herokuapp.com/https://dqmonstersdbapi-1-a1113227.deta.app/dqm1/monsters"
+      "https://corsproxy.org/?https://dqmonstersdbapi-1-a1113227.deta.app/dqm1/monsters"
     )
       .then((response) => response.json())
       .then((data) => setMonsters(data));
@@ -26,6 +17,10 @@ function MonsterList() {
 
   const handleSearch = (searchValue) => {
     setSearchTerm(searchValue.toLowerCase());
+  };
+
+  const handleLinkClick = () => {
+    setSearchTerm("");
   };
 
   const filteredMonsters =
@@ -36,29 +31,46 @@ function MonsterList() {
         );
 
   return (
-    <div className="monster-list-container">
-      <SearchBar onSearch={handleSearch} />
-      <div className={`monster-list ${searchTerm ? "has-search-term" : ""}`}>
-        {filteredMonsters.length > 0
-          ? filteredMonsters.map((monster) => (
-              <div key={monster.id} className="monster-list-item">
+    <div className={styles["monster-list-container"]}>
+      <Input
+        type="text"
+        placeholder="What monster are you looking for?"
+        onChange={(e) => handleSearch(e.target.value)}
+        value={searchTerm}
+        className={styles["monster-search-input"]}
+        style={{ width: "288px" }}
+      />
+      <div
+        className={`${styles["monster-list"]} ${
+          searchTerm ? styles["has-search-term"] : ""
+        }`}
+      >
+        {filteredMonsters.length > 0 ? (
+          filteredMonsters.map((monster) => (
+            <Link
+              key={monster.id}
+              to={`/catalogue/${monster.id}`}
+              onClick={handleLinkClick}
+            >
+              <div key={monster.id} className={styles["monster-list-item"]}>
                 <img
-                  src={`src/assets/images/monsters/${monster.new_name.replace(
+                  src={`${
+                    window.location.origin
+                  }/src/assets/images/monsters/${monster.new_name.replace(
                     / /g,
                     "_"
                   )}.png`}
                   alt={monster.new_name}
-                  className="monster-image"
+                  className={styles["monster-image"]}
                 />
                 {monster.new_name}
               </div>
-            ))
-          : searchTerm && (
-              <div className="no-results">Nessun risultato trovato</div>
-            )}
+            </Link>
+          ))
+        ) : searchTerm ? (
+          <div className={styles["no-results"]}>No results found</div>
+        ) : null}
       </div>
     </div>
   );
 }
-
-export default MonsterList;

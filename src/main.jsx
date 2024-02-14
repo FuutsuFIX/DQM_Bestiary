@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./views/App/App.jsx";
+import App from "./Components/views/App/App.jsx";
 import { CorsOptions } from "cors";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";

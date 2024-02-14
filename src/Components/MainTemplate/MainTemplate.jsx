@@ -1,13 +1,20 @@
 import React from "react";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import Header from "../Header/Header.jsx";
+import Footer from "../Footer/Footer.jsx";
 
 export default function MainTemplate(props) {
-  const { footerCourseName, footerCourseLink } = props;
+  const { children, footerCourseName, footerCourseLink, navItems, logo } =
+    props;
   return (
     <>
-      <Header></Header>
-      <Footer courseName={footerCourseName} courseLink={footerCourseLink} />
+      <Header logo={logo} navItems={navItems}></Header>
+      <div>{children}</div>
+
+      <Footer
+        courseName={footerCourseName}
+        courseLink={footerCourseLink}
+        navItems={navItems}
+      />
     </>
   );
 }
