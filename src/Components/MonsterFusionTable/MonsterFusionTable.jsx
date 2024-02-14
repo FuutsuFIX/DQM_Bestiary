@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Table } from "reactstrap";
-import { getMonsterImage } from "../../utility/utility";
+import { getMonsterImage, monsterDefaultImage } from "../../utility/utility";
 
 export default function MonsterFusionTable({ fusionData }) {
   if (!fusionData) {
