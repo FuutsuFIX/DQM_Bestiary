@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardBody, CardImg, CardText, CardTitle } from "reactstrap";
 import style from "./MonsterCard.module.css";
-import { monsterDefaultImage } from "../../utility/utility";
+import { getMonsterImage, monsterDefaultImage } from "../../utility/utility";
 import { NavLink } from "react-router-dom";
 
 export default function MonsterCard(props) {
@@ -16,7 +16,7 @@ export default function MonsterCard(props) {
           className={style.image}
           top
           width="100%"
-          src={`src/assets/images/monsters/${new_name.replace(/ /g, "_")}.png`}
+          src={getMonsterImage(id, new_name)}
           alt={new_name}
         />
         <CardBody className="text-center">
