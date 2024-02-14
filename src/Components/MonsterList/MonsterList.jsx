@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Input } from "reactstrap";
 import { Link } from "react-router-dom";
 import styles from "./MonsterList.module.css";
-import { getMonsterImage } from "../../utility/utility";
+import { getMonsterImage, monsterDefaultImage } from "../../utility/utility";
 
 export default function MonsterList() {
   const [monsters, setMonsters] = useState([]);
@@ -56,6 +56,7 @@ export default function MonsterList() {
               <div key={monster.id} className={styles["monster-list-item"]}>
                 <img
                   src={getMonsterImage(monster.id, monster.new_name)}
+                  onError={(event) => monsterDefaultImage(event)}
                   alt={monster.new_name}
                   className={styles["monster-image"]}
                 />

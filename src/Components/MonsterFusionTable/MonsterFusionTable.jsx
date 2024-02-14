@@ -56,6 +56,7 @@ export default function MonsterFusionTable({ fusionData }) {
                         fusion.parent2.id,
                         fusion.parent2.new_name
                       )}
+                      onError={(event) => monsterDefaultImage(event)}
                       alt={fusion.parent2.new_name}
                       className="mr-2"
                       style={{
@@ -80,6 +81,7 @@ export default function MonsterFusionTable({ fusionData }) {
                       fusion.child.id,
                       fusion.child.new_name
                     )}
+                    onError={(event) => monsterDefaultImage(event)}
                     alt={fusion.child.new_name}
                     className="mr-2"
                     style={{
