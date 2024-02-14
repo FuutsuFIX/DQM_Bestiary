@@ -71,4 +71,3 @@ Per montare il progetto DQM_Bestiary sulla propria macchina locale, è necessari
 
    L'applicazione DQM_Bestiary sarà quindi accessibile e interattiva sulla propria macchina locale.
 
-Seguendo questi semplici passaggi, è possibile montare il progetto DQM_Bestiary sulla propria macchina locale e iniziare a esplorarne il codice e le funzionalità in un ambiente di sviluppo controllato.
