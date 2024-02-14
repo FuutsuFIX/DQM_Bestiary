@@ -30,7 +30,7 @@ L'uso di Vite.js, React e Netlify ha portato diversi vantaggi significativi nel 
 
 5. **Scalabilità e Manutenibilità**: La combinazione di React e Vite.js ha reso l'applicazione altamente scalabile e facilmente mantenibile, consentendo l'aggiunta di nuove funzionalità e la gestione dell'evoluzione del progetto nel tempo.
    
-**Visita la Web App:**
+##Visita la Web App:**
 
 Si può accedere alla web app DQM_Bestiary e esplorare il database dei mostri di Dragon Quest Monsters al seguente link: [Dragon Quest Monster Bestiary](https://dragonquestmonsterbestiary.netlify.app)
 
