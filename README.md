@@ -17,6 +17,26 @@ Netlify è stata la piattaforma scelta per l'hosting della web app DQM_Bestiary.
 ### DQMonstersDB
 L'API [DQMonstersDB](https://github.com/cmsato09/DQMonstersDB-API) fornisce un prezioso punto di accesso alle informazioni riguardanti il gioco Dragon Quest Monsters -- Terry's Wonderland (noto anche come Dragon Warrior Monsters negli Stati Uniti), un spin-off della celebre serie JRPG Dragon Quest. Unica API attualmente disponibile, è risultata completa e di facile utilizzo con la sua ottima documentazione. Per quanto l'api abbia già un'interfaccia in frontend, essa risulta minimale, soprattutto nell'utilizzo di immagini, che invece sono in questa web app hostate su github in HD dagli artbook ufficiali di Akira Toriyama.
 
+### Organizzazione del Progetto:
+Il progetto DQM_Bestiary è strutturato seguendo una suddivisione logica dei file e delle cartelle per facilitare la consultazione del codice sorgente. Di seguito è riportata una panoramica dell'organizzazione del progetto:
+
+- **.gitattributes** e **.gitignore**: File di configurazione per il controllo di versione Git.
+- **index.html**: Pagina HTML principale dell'applicazione.
+- **package-lock.json** e **package.json**: File di configurazione per le dipendenze del progetto.
+- **public**: Cartella contenente file statici accessibili pubblicamente, come immagini e icone.
+- **README.md**: Documentazione principale del progetto.
+- **src**: Cartella principale contenente il codice sorgente dell'applicazione.
+  - **assets**: Contiene immagini e icone utilizzate nell'applicazione.
+  - **Components**: Cartella che raggruppa i componenti React riutilizzabili dell'applicazione.
+  - **utility**: Contiene funzioni di utilità e helper per il progetto.
+  - **views**: Contiene i componenti React che rappresentano le diverse viste dell'applicazione.
+- **vite.config.js**: File di configurazione per Vite.js, il bundler utilizzato nel progetto.
+
+### Distintivi Aspetti del Progetto:
+- **Struttura Modulare**: Il progetto è organizzato in modo modulare, con componenti React chiaramente separati all'interno della cartella "Components" e viste distinte all'interno della cartella "views", rendendo più agevole la gestione e la manutenzione del codice.
+- **Utilizzo di Vite.js**: Vite.js è stato scelto come bundler per il progetto, garantendo un'esperienza di sviluppo veloce e reattiva.
+- **Approccio Component-Based**: L'applicazione segue un approccio basato su componenti, sfruttando la modularità offerta da React per costruire l'interfaccia utente in modo efficiente e scalabile.
+
 ## Vantaggi nel Progetto
 L'uso di Vite.js, React e Netlify ha portato diversi vantaggi significativi nel progetto DQM_Bestiary:
 
