@@ -2,7 +2,7 @@ import Unknown from "../assets/images/unknown_data.png";
 
 export const getMonsterImage = (id, name) => {
     if (name) {
-        return `/src/assets/images/monsters/${name.replace(/ /g, "_")}.png`;
+        return `https://raw.githubusercontent.com/FuutsuFIX/DQM_Bestiary/main/src/assets/images/monsters/${name.replace(/ /g, "_")}.png`;
     } else {
 
         return '/src/assets/images/unknown_data.png';
